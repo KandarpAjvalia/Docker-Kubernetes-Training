@@ -8,5 +8,6 @@ docker system prune
 docker run -it kajvalia/simpleweb sh
 docker run -p 5000:8080 kajvalia/simpleweb
 
+docker-compose up --build
 docker-compose up -d
 docker-compose down
