@@ -1,0 +1,13 @@
+version: '3'
+services: 
+  # Name of container is redis-server
+  redis-server:
+    # Search for redis image
+    image: 'redis'
+  node-app:
+    # Use Dockerfile in the current directory
+    build: .
+    ports: 
+      # Open access to the container from local machine
+      # First: local, Second: container 
+      - "4001:8081"
