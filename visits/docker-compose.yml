@@ -5,6 +5,7 @@ services:
     # Search for redis image
     image: 'redis'
   node-app:
+    restart: on-failure
     # Use Dockerfile in the current directory
     build: .
     ports: 
